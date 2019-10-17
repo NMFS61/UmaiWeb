@@ -34,28 +34,6 @@
 </head>
 
 <body class="">
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal end -->
-
   <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
     <div class="container-fluid">
       <!-- Toggler -->
@@ -225,10 +203,10 @@
             <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="../img/profile/bora.png">
+                  <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
-                  <span class="mb-0 text-sm  font-weight-bold">Bora Uzun</span>
+                  <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
                 </div>
               </div>
             </a>
@@ -274,16 +252,19 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Foods</h5>
-
+                      <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
+                      <span class="h2 font-weight-bold mb-0">350,897</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                        <i class="fas fa-utensils"></i>
-                        <!-- <img alt="Image placeholder" src="../img/coke.png"> -->
+                        <i class="fas fa-chart-bar"></i>
                       </div>
                     </div>
                   </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -292,15 +273,19 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Drinks</h5>
-
+                      <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
+                      <span class="h2 font-weight-bold mb-0">2,356</span>
                     </div>
                     <div class="col-auto">
-                     <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
-                        <i class="fas fa-beer"></i>
+                      <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-chart-pie"></i>
                       </div>
+                    </div>
                   </div>
-                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last week</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -309,15 +294,19 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Dessert</h5>
-
+                      <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
+                      <span class="h2 font-weight-bold mb-0">924</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                        <i class="fas fa-birthday-cake"></i>
+                        <i class="fas fa-users"></i>
                       </div>
                     </div>
                   </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
+                    <span class="text-nowrap">Since yesterday</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -326,8 +315,8 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Meals</h5>
-
+                      <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
+                      <span class="h2 font-weight-bold mb-0">49,65%</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -335,6 +324,10 @@
                       </div>
                     </div>
                   </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -345,32 +338,98 @@
     <div class="container-fluid mt--7">
       <!-- Table -->
       <div class="row">
-        <!-- <div class="col-xl-8 mb-5 mb-xl-0"> -->
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
-              <!-- <h3 class="mb-0">Menu</h3> -->
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Meat Foods</h3>
-                </div>
-                <div class="col text-right">
-                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
-                </div>
-              </div>
+              <h3 class="mb-0">Menu</h3>
             </div>
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
                     <th scope="col">Name</th>
+                    <th scope="col">Description</th>
                     <th scope="col">Unit</th>
                     <th scope="col">Price</th>
-                    <th scope="col">Availability</th>
-                    <th scope="col"></th>
+                    <th scope="col">Ingredients</th>
+                    <th scope="col">Allergens</th>
+                    <th scope="col">Promotions</th>
+                    <th scope="col">Suggestions</th>
+                    <th scope="col">Edit</th>
                   </tr>
                 </thead>
                 <tbody>
+
+                  <!-- cipura -->
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="../img/cipura.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Cipura</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                      açıklama uzadıkça sorun oluyor mu şu an test ediyorum. biraz daha uzun olsun, tamam yeterli
+                    </td>
+                    <td>
+                      10
+                    </td>
+                    <td>
+                      $2,500 USD
+                    </td>
+                    <td>
+                      ingredients
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-warning"></i> pending
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-2-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-3-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                        </a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">60%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <!-- burasi dropdown, edit olarak ayarlanacak start -->
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                    <!-- burasi dropdown, edit olarak ayarlanacak end -->
+                  </tr>
 
                   <!-- steak -->
                   <tr>
@@ -380,36 +439,52 @@
                           <img alt="Image placeholder" src="../img/steak.jpg">
                         </a>
                         <div class="media-body">
-                          <span class="mb-0 text-sm">Ribeye Steak</span>
+                          <span class="mb-0 text-sm">Steak</span>
                         </div>
                       </div>
                     </th>
                     <td>
-                      200gr
-                      <br>
-                      300gr
-                      <br>
-                      400gr
+                      description
                     </td>
                     <td>
-                      $20 USD
-                      <br>
-                      $29 USD
-                      <br>
-                      $40 USD
+                      20
+                    </td>
+                    <td>
+                      $1,800 USD
+                    </td>
+                    <td>
+                      ingredients
                     </td>
                     <td>
                       <span class="badge badge-dot">
-                        <i class="bg-info"></i> happy hour
+                        <i class="bg-success"></i> completed
                       </span>
-                      <br>
-                      <span class="badge badge-dot">
-                        <i class="bg-success"></i> in stock
-                      </span>
-                      <br>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i> not available
-                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-2-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-3-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                        </a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
@@ -417,17 +492,84 @@
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                              Edit/See
-                            </button>
-                          <a class="dropdown-item" href="#">Delete</a>
-                          <a class="dropdown-item" href="#">Toggle Availability</a>
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
                   </tr>
 
-                <!-- coke -->
+                  <!-- sushi -->
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="../img/sushi.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Sushi</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                        desc
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        $3,150 USD
+                    </td>
+                    <td>
+                      ingredients
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-danger"></i> delayed
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-2-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-3-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                        </a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">72%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- coke -->
                   <tr>
                     <th scope="row">
                       <div class="media align-items-center">
@@ -440,31 +582,47 @@
                       </div>
                     </th>
                     <td>
-                      small
-                      <br>
-                      medium
-                      <br>
-                      large
+                        description
                     </td>
                     <td>
-                      $1 USD
-                      <br>
-                      $2 USD
-                      <br>
-                      $3 USD
+                        2
+                    </td>
+                    <td>
+                        $4,400 USD
+                    </td>
+                    <td>
+                        ingredients
                     </td>
                     <td>
                       <span class="badge badge-dot">
-                        <i class="bg-info"></i> happy hour
+                        <i class="bg-info"></i> on schedule
                       </span>
-                      <br>
-                      <span class="badge badge-dot">
-                        <i class="bg-success"></i> in stock
-                      </span>
-                      <br>
-                      <span class="badge badge-dot mr-4">
-                        <i class="bg-danger"></i> not available
-                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-2-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-3-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                        </a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">90%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                          </div>
+                        </div>
+                      </div>
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
@@ -472,14 +630,82 @@
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Edit/See</a>
-                          <a class="dropdown-item" href="#">Delete</a>
-                          <a class="dropdown-item" href="#">Toggle Availability</a>
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </div>
                     </td>
                   </tr>
 
+                  <!-- cheesecake -->
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="../img/cheesecake.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Blueberry Cheesecake</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                       description
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        $2,200 USD
+                    </td>
+                    <td>
+                        ingredients
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i> completed
+                      </span>
+                    </td>
+                    <td>
+                      <div class="avatar-group">
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-2-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-3-800x800.jpg" class="rounded-circle">
+                        </a>
+                        <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                        </a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">100%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -606,7 +832,7 @@
                       </td>
                       <!-- burasi dropdown, edit olarak ayarlanacak end -->
                   </tr>
-
+  
                     <!-- steak -->
                     <tr>
                       <th scope="row">
@@ -675,7 +901,7 @@
                         </div>
                       </td>
                     </tr>
-
+  
                     <!-- sushi -->
                     <tr>
                       <th scope="row">
@@ -744,7 +970,7 @@
                         </div>
                       </td>
                     </tr>
-
+  
                     <!-- coke -->
                     <tr>
                       <th scope="row">
@@ -813,7 +1039,7 @@
                         </div>
                       </td>
                     </tr>
-
+  
                     <!-- cheesecake -->
                     <tr>
                       <th scope="row">
