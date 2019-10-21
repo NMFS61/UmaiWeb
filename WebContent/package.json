@@ -1,0 +1,30 @@
+{
+  "name": "Umai Venue App",
+  "version": "1.1.0",
+  "description": "Mobile App for Restaurants, Cafes, Bars",
+  "main": "index.html",
+  "directories": {
+    "example": "root"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/argon-dashboard.git"
+  },
+  "keywords": [
+    "mobile app for restaurants",
+    "mobile app for cafe",
+    "mobile app for hotel",
+    "mobile app for bar",
+    "how much does it cost to have a mobile app",
+    "mobile app development costs restaurant"
+  ],
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/argon-dashboard/issues"
+  },
+  "homepage": "http://www.umaiapp.com"
+}
