@@ -22,3 +22,16 @@ function inputpassword() {
 function inputdatetime() {
     document.getElementById("i6").value = "23.10:2019 - 16:04";
 }
+
+function alertValue() {
+    var demo = document.getElementById("i7").value;
+    alert(demo);
+}
+  
+function getValue(clickValue){
+    alert(clickValue + " - selected");
+}
+
+function dropdownValue(selectValue) {
+    alert(selectValue.options[selectValue.selectedIndex].text);
+} 
