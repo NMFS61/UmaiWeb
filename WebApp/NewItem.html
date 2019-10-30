@@ -34,6 +34,22 @@
   <link href="./assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="./assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <script>
+    $("#profileImage").click(function(e) {
+  $("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+  if ( uploader.files && uploader.files[0] ){
+        $('#profileImage').attr('src', 
+           window.URL.createObjectURL(uploader.files[0]) );
+  }
+}
+
+$("#imageUpload").change(function(){
+  fasterPreview( this );
+});
+  </script>
 </head>
 
 <body class="">
@@ -265,29 +281,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 order-lg-2">
                     <div class="card-profile-image">
-                        <a href="#" data-toggle="modal" data-target="#exampleModal">
-                            <img src="./assets/img/theme/team-4-800x800.jpg" id="result" class="rounded-circle">
-                        </a>
-                    </div>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                              <input type="file" id="filetag">
-                              <img src="./assets/img/theme/team-4-800x800.jpg" class="rounded-circle" id="preview" width="128"> 
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-primary upload-button" onclick="acceptedImage()">Confirm</button> 
-                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
+                        <div id="profile-container">
+                          <image id="profileImage" src="https://placeimg.com/200/200" class="rounded-circle" />
+                       </div>
+                       <input id="imageUpload" type="file" capture>
                     </div>
                 </div>
             </div>
@@ -797,15 +794,9 @@
                  </tbody>
                  </table>
                  </div>
-
-
             </div>
-
         </div>
     </div>
-
-
-
 </div>
 
       <!-- Footer -->
@@ -839,6 +830,20 @@
   <script src="./assets/js/plugins/chart.js/dist/Chart.min.js"></script>
   <script src="./assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
   <script src="newItem.js"></script>
+  <script>
+      $("#profileImage").click(function(e) {
+       $("#imageUpload").click();
+         });
+         function fasterPreview( uploader ) {
+           if ( uploader.files && uploader.files[0] ){
+                 $('#profileImage').attr('src', 
+                    window.URL.createObjectURL(uploader.files[0]) );
+           }
+         }
+         $("#imageUpload").change(function(){
+           fasterPreview( this );
+      });
+    </script>
   <!--   Argon JS   -->
   <script src="./assets/js/argon-dashboard.min.js?v=1.1.0"></script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
