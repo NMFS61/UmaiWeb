@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task20</title>
+    <script src="Task20.js"></script>
+</head>
+<body>
+    Text: <br>
+    <input type="text" id="i1" placeholder="type:text">
+    <button onclick="getValueOfInput()">Demo</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    Checkbox: <br>
+    <input type="checkbox" id="i2" placeholder="type:checkbox">
+    <button onclick="check()">Demo</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    Radiobutton: <br>
+    <input type="radio" id="i3">Red<br>
+    <input type="radio">Blue
+    <button onclick="radiobutton()">Demo(red)</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    Dropdown: <br>
+     <select id="i4">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+    <br>
+    <button onclick="dropdown()">Demo(0)</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    Password: <input type="password" value="123456" id="i5"><br><br>
+    <button onclick="inputpassword()">Demo(show-hide pass)</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    Date: <input type="datetime" id="i6">
+    <br>
+    <button onclick="inputdatetime()">Demo(get datetime)</button>
+    <br>
+    -----------------------------------------------
+
+
+    <br><h3>task21</h3>
+    -----------------------------------------------
+    <br>
+    alert value: 
+    <br>
+    <button id="i7" onclick="alertValue()" value="hello 21">Demo</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    text: <br>
+    <input type="text" id="i8" value="">
+    <br>
+    <button type="button" onclick="alert(i8.value)">Demo Text</button>
+    <br>
+    -----------------------------------------------
+    <br>
+    radio: <br>
+    <input type="radio" id="i9" onchange="getValue(this.value)" value="Black">Black</input>
+    <input type="radio" id="i10" onchange="getValue(this.value)" value="White">White</input>
+    <br>
+    -----------------------------------------------
+    <br>
+    dropdown: <br>
+     <select id="i11" onchange="dropdownValue(this)">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+    <br>
+</body>
+</html>
