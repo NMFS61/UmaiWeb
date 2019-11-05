@@ -20695,5 +20695,10 @@ pre>code.highlight {
     width: 150px;
     height: 150px;
 }
+#map-canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 /*# sourceMappingURL=dashboard-free.css.map */
