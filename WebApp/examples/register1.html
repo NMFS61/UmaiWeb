@@ -23,15 +23,15 @@
     NMFS - Register
   </title>
   <!-- Favicon -->
-  <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
-  <link href="assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
-  <link href="assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="../assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+  <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/tel/css/intlTelInput.css">
+  <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/tel/css/intlTelInput.css">
 </head>
 
 <body class="bg-default">
@@ -39,8 +39,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
       <div class="container px-4">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/brand/white.png" />
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/brand/white.png" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,8 +50,8 @@
           <div class="navbar-collapse-header d-md-none">
             <div class="row">
               <div class="col-6 collapse-brand">
-                <a href="dashboard">
-                  <img src="assets/img/brand/blue.png">
+                <a href="../index.html">
+                  <img src="../assets/img/brand/blue.png">
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -64,17 +64,28 @@
           </div>
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
-
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="examples/login.html">
+              <a class="nav-link nav-link-icon" href="../index.html">
+                <i class="ni ni-planet"></i>
+                <span class="nav-link-inner--text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="../examples/register.html">
+                <i class="ni ni-circle-08"></i>
+                <span class="nav-link-inner--text">Register</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="../examples/login.html">
                 <i class="ni ni-key-25"></i>
                 <span class="nav-link-inner--text">Login</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="examples/profile.html">
+              <a class="nav-link nav-link-icon" href="../examples/profile.html">
                 <i class="ni ni-single-02"></i>
-                <span class="nav-link-inner--text">Main Page</span>
+                <span class="nav-link-inner--text">Profile</span>
               </a>
             </li>
           </ul>
@@ -108,13 +119,13 @@
               <div class="text-center text-muted mb-4">
                 <small>Sign up</small>
               </div>
-
+              <form role="form">
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input id="signupOrgName" class="form-control" placeholder="Organization Name" type="text">
+                    <input class="form-control" placeholder="Organization Name" type="text">
                   </div>
                 </div>
                 <div class="form-group">
@@ -122,7 +133,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-badge"></i></span>
                     </div>
-                    <input id="signupFullName" class="form-control" placeholder="Registrar’s Full Name" type="text">
+                    <input class="form-control" placeholder="Registrar’s Full Name" type="text">
                   </div>
                 </div>
                 <div class="form-group">
@@ -130,7 +141,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input id="signupEmail" class="form-control" placeholder="Email Adress" type="email">
+                    <input class="form-control" placeholder="Email Adress" type="email">
                   </div>
                 </div>
                 <div class="form-group">
@@ -153,16 +164,16 @@
                   </div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" onClick="sendRegRequest()" data-target="#verificationModal">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         Create Account
                     </button>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="verificationModal" tabindex="-1" role="dialog" aria-labelledby="verificationModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="verificationModalLabel">Verification </h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Verification </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -173,10 +184,10 @@
                             <h3>A verification code is sent to your phone, Please enter your verification code:</h3>
                             <div id="form">
                                 <br>
-                                <input type="tel" id="activationCodeTxt" class="form-control" placeholder="your verification code" aria-required="true" aria-invalid="false" required>
-                                <br>
-                              <button type="submit" class="btn btn-default btn-lg btn-block" onClick="logon()">Verify</button>
-
+                                <input type="tel" class="form-control" placeholder="your verification code" aria-required="true" aria-invalid="false" required>
+                                <br>                                
+                              <button type="submit" class="btn btn-default btn-lg btn-block">Verify</button>
+                            </form>
                             </div>
                           </div>
                         </div>
@@ -184,7 +195,7 @@
                     </div>
                   </div>
                 </div>
-
+              </form>
             </div>
           </div>
         </div>
@@ -215,12 +226,12 @@
   </footer>
   </div>
   <!--   Core   -->
-  <script src="assets/js/plugins/jquery/dist/jquery.min.js"></script>
-  <script src="assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!--   Optional JS   -->
-  <script src="assets/tel/js/intlTelInput.js"></script>
+  <script src="../assets/tel/js/intlTelInput.js"></script>
   <!-- tel script -->
-<!--   <script>
+  <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
       dropdownContainer: document.body,
@@ -232,11 +243,11 @@
       },
       // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
       separateDialCode: true,
-      utilsScript: "assets/tel/js/utils.js",
+      utilsScript: "../assets/tel/js/utils.js",
     });
-  </script> -->
+  </script>
   <!--   Argon JS   -->
-  <script src="assets/js/argon-dashboard.min.js?v=1.1.0"></script>
+  <script src="../assets/js/argon-dashboard.min.js?v=1.1.0"></script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>
     window.TrackJS &&
@@ -244,122 +255,6 @@
         token: "ee6fab19c5a04ac1a32a645abde4613a",
         application: "argon-dashboard-free"
       });
-  </script>
-  <script>
-          // **********   SIGNUP VALIDATIONS *****************
-
-
-    var sendRegRequest=function(){
-    	      var validateMsg=validate();
-        	  if(validateMsg==''){
-        		if(createNewAccount()==true){
-        			var str="<h3>A verification code is sent to your phone, Please enter your verification code:</h3>\n" +
-    				"                            <div id=\"form\">\n" +
-    				"                                <br>\n" +
-    				"                                <input type=\"text\" id=\"activationCodeTxt\" class=\"form-control\" placeholder=\"your verification code\" aria-required=\"true\" aria-invalid=\"false\" required>\n" +
-    				"                                <br>                                \n" +
-    				"                              <button type=\"submit\" class=\"btn btn-default btn-lg btn-block\" onClick=\"logon()\">Verify</button>\n" +
-    				"                            </div>";
-
-        		    document.getElementById("dialog").innerHTML =str;
-        		 }
-        	  }
-        	  else{
-        		  document.getElementById("dialog").innerHTML =validateMsg;
-        	  }
-
-          }
-
-    		var validate=function (){
- 	  								 validateMsg="";
- 	  								 validateMsg=validateFullname(validateMsg);
- 	  								 validateMsg=validateEmail(validateMsg);
- 	  				        	     validateMsg=validateOrganizationName(validateMsg);
- 	  				        	     validateMsg=validatePhone(validateMsg);
- 	  				        	     validateMsg=validateConditions(validateMsg);
- 	  								 return validateMsg;
- 									}
-
-    		function validateFullname(arg){
-    			 					if(document.getElementById("signupFullName").value===''){arg=arg+"- Full name can not be empty<br>";}
-         	   						return arg;
-           							 }
-
-    		function validateEmail(arg){
-    									if(document.getElementById("signupEmail").value===''){arg=arg+"- Email can not be empty<br>";}
-         	  							 return arg;
-            							}
-
-           function validateConditions(arg){
-        						       if(document.getElementById("customCheckRegister").checked==false){arg=arg+"- Please accept the terms and condition box<br>";}
-        						   return arg;
-          						 }
-
-           function validateOrganizationName(arg){
-        	   								 if(document.getElementById("signupOrgName").value===''){arg=arg+"- Organization can not be empty<br>";}
-        	  								 return arg;
-	          						 }
-
-            function validatePhone(arg){
-        	  						 if(document.getElementById("phone").value===''){arg=arg+"- Phone can not be empty<br>";}
-        	  						 return arg;
-	          						 }
-
-</script>
-  <script>
-   var logon=function() {
-
-	   const url='http://localhost:8080/UmaiWebApp/activate';
-	   var activationCode=document.getElementById("activationCodeTxt").value;
-	   alert(activationCode);
-	   var xmlHttp = new XMLHttpRequest();
-	   xmlHttp.open( "PUT", url, false ); // false for synchronous request
-	   xmlHttp.setRequestHeader("activation-code", activationCode);
-	   xmlHttp.send();
-	   var resp=xmlHttp.responseText;
-	   if(resp==='false'){
-		                  alert("That wasn't the correct code");
-                        }
-	   if(resp==='true'){
-	                                    window.open('http://localhost:8080/UmaiWebApp/dashboard','_self');
-	                    }
-
-	  /*  $.get('http://localhost:8080/UmaiWebApp/register2', function(responseText) {
-		    alert(responseText);
-		}); */
-
-	}
-
-   var createNewAccount=function(){ // Send a request to create a new venue
-	    var retVal=false;
-		var request={
-						"venue":"",
-						"person":"",
-						"email":"",
-						"phone":""
-					}
-
-		request.venue=document.getElementById("signupOrgName").value;
-		request.person=document.getElementById("signupFullName").value;
-		request.email=document.getElementById("signupEmail").value;
-		request.phone=document.getElementById("phone").value;
-
-
-			 $.ajax({
-	            type: "POST",
-	            url: "http://localhost:8080/UmaiWebApp/register",
-	            data: JSON.stringify(request),
-	            contentType: "application/json; charset=utf-8",
-	            dataType: "json",
-	            success: function(data){
-	            	retVal=true;
-					},
-	            failure: function(errMsg) {
-	                alert(errMsg);
-	            }
-	        });
-
-}
   </script>
 </body>
 
