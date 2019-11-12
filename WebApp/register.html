@@ -42,7 +42,8 @@
         <a class="navbar-brand" href="index.html">
           <img src="assets/img/brand/white.png" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
@@ -55,7 +56,8 @@
                 </a>
               </div>
               <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main"
+                  aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
                   <span></span>
                   <span></span>
                 </button>
@@ -93,7 +95,8 @@
         </div>
       </div>
       <div class="separator separator-bottom separator-skew zindex-100">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg">
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
@@ -109,81 +112,86 @@
                 <small>Sign up</small>
               </div>
 
-                <div class="form-group">
-                  <div class="input-group input-group-alternative mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                    </div>
-                    <input id="signupOrgName" class="form-control" placeholder="Organization Name" type="text">
+              <div class="form-group">
+                <div class="input-group input-group-alternative mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                  </div>
+                  <input id="signupOrgName" class="form-control" placeholder="Organization Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-alternative mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-badge"></i></span>
+                  </div>
+                  <input id="signupFullName" class="form-control" placeholder="Registrar’s Full Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-alternative mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  </div>
+                  <input id="signupEmail" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email Adress" type="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
+                  </div>
+                  <input style="border: transparent; top: 5px;" id="phone" maxlength="11" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')" name="phone" type="tel">
+                </div>
+                <div class="text-muted font-italic"><small>You don’t need a password as you will get your one time use
+                    password over to your phone as text message</small></div>
+              </div>
+              <div class="row my-4">
+                <div class="col-12">
+                  <div class="custom-control custom-control-alternative custom-checkbox">
+                    <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                    <label class="custom-control-label" for="customCheckRegister">
+                      <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
+                    </label>
                   </div>
                 </div>
-                <div class="form-group">
-                  <div class="input-group input-group-alternative mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-badge"></i></span>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal" onClick="sendRegRequest()"
+                  data-target="#verificationModal">
+                  Create Account
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="verificationModal" tabindex="-1" role="dialog"
+                aria-labelledby="verificationModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="verificationModalLabel">Verification </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                    <input id="signupFullName" class="form-control" placeholder="Registrar’s Full Name" type="text">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-group-alternative mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                    </div>
-                    <input id="signupEmail" class="form-control" placeholder="Email Adress" type="email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-group-alternative">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
-                    </div>
-                    <input style="border: transparent; top: 5px;"  id="phone" name="phone" type="tel">
-                  </div>
-                  <div class="text-muted font-italic"><small>You don’t need a password as you will get your one time use password over to your phone as text message</small></div>
-                </div>
-                <div class="row my-4">
-                  <div class="col-12">
-                    <div class="custom-control custom-control-alternative custom-checkbox">
-                      <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                      <label class="custom-control-label" for="customCheckRegister">
-                        <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" onClick="sendRegRequest()" data-target="#verificationModal">
-                        Create Account
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="verificationModal" tabindex="-1" role="dialog" aria-labelledby="verificationModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="verificationModalLabel">Verification </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div id="wrapper">
-                          <div id="dialog">
-                            <h3>A verification code is sent to your phone, Please enter your verification code:</h3>
-                            <div id="form">
-                                <br>
-                                <input type="tel" id="activationCodeTxt" class="form-control" placeholder="your verification code" aria-required="true" aria-invalid="false" required>
-                                <br>
-                              <button type="submit" class="btn btn-default btn-lg btn-block" onClick="logon()">Verify</button>
+                    <div class="modal-body">
+                      <div id="wrapper">
+                        <div id="dialog">
+                          <h3>A verification code is sent to your phone, Please enter your verification code:</h3>
+                          <div id="form">
+                            <br>
+                            <input type="tel" id="activationCodeTxt" class="form-control"
+                              placeholder="your verification code" aria-required="true" aria-invalid="false" required>
+                            <br>
+                            <button type="submit" class="btn btn-default btn-lg btn-block"
+                              onClick="logon()">Verify</button>
 
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
             </div>
           </div>
@@ -206,7 +214,8 @@
               <a href="http://nmfs.uk/services" class="nav-link" target="_blank">NMFS</a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+              <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link"
+                target="_blank">MIT License</a>
             </li>
           </ul>
         </div>
@@ -220,7 +229,7 @@
   <!--   Optional JS   -->
   <script src="assets/tel/js/intlTelInput.js"></script>
   <!-- tel script -->
-<!--   <script>
+  <!--   <script>
     var input = document.querySelector("#phone");
     window.intlTelInput(input, {
       dropdownContainer: document.body,
@@ -246,120 +255,124 @@
       });
   </script>
   <script>
-          // **********   SIGNUP VALIDATIONS *****************
+    // **********   SIGNUP VALIDATIONS *****************
 
 
-    var sendRegRequest=function(){
-    	      var validateMsg=validate();
-        	  if(validateMsg==''){
-        		if(createNewAccount()==true){
-        			var str="<h3>A verification code is sent to your phone, Please enter your verification code:</h3>\n" +
-    				"                            <div id=\"form\">\n" +
-    				"                                <br>\n" +
-    				"                                <input type=\"text\" id=\"activationCodeTxt\" class=\"form-control\" placeholder=\"your verification code\" aria-required=\"true\" aria-invalid=\"false\" required>\n" +
-    				"                                <br>                                \n" +
-    				"                              <button type=\"submit\" class=\"btn btn-default btn-lg btn-block\" onClick=\"logon()\">Verify</button>\n" +
-    				"                            </div>";
+    var sendRegRequest = function () {
+      var validateMsg = validate();
+      if (validateMsg == '') {
+        if (createNewAccount() == true) {
+          var str = "<h3>A verification code is sent to your phone, Please enter your verification code:</h3>\n" +
+            "                            <div id=\"form\">\n" +
+            "                                <br>\n" +
+            "                                <input type=\"text\" id=\"activationCodeTxt\" class=\"form-control\" placeholder=\"your verification code\" aria-required=\"true\" aria-invalid=\"false\" required>\n" +
+            "                                <br>                                \n" +
+            "                              <button type=\"submit\" class=\"btn btn-default btn-lg btn-block\" onClick=\"logon()\">Verify</button>\n" +
+            "                            </div>";
 
-        		    document.getElementById("dialog").innerHTML =str;
-        		 }
-        	  }
-        	  else{
-        		  document.getElementById("dialog").innerHTML =validateMsg;
-        	  }
+          document.getElementById("dialog").innerHTML = str;
+        }
+      }
+      else {
+        document.getElementById("dialog").innerHTML = validateMsg;
+      }
 
-          }
+    }
 
-    		var validate=function (){
- 	  								 validateMsg="";
- 	  								 validateMsg=validateFullname(validateMsg);
- 	  								 validateMsg=validateEmail(validateMsg);
- 	  				        	     validateMsg=validateOrganizationName(validateMsg);
- 	  				        	     validateMsg=validatePhone(validateMsg);
- 	  				        	     validateMsg=validateConditions(validateMsg);
- 	  								 return validateMsg;
- 									}
+    var validate = function () {
+      validateMsg = "";
+      validateMsg = validateFullname(validateMsg);
+      validateMsg = validateEmail(validateMsg);
+      validateMsg = validateOrganizationName(validateMsg);
+      validateMsg = validatePhone(validateMsg);
+      validateMsg = validateConditions(validateMsg);
+      return validateMsg;
+    }
 
-    		function validateFullname(arg){
-    			 					if(document.getElementById("signupFullName").value===''){arg=arg+"- Full name can not be empty<br>";}
-         	   						return arg;
-           							 }
+    function validateFullname(arg) {
+      if (document.getElementById("signupFullName").value === '') { arg = arg + "- Full name can not be empty<br>"; }
+      if (document.getElementById("signupFullName").value.length<2) {arg = arg + "- Minimum two characters<br>";}
+      return arg;
+    }
 
-    		function validateEmail(arg){
-    									if(document.getElementById("signupEmail").value===''){arg=arg+"- Email can not be empty<br>";}
-         	  							 return arg;
-            							}
+    function validateEmail(arg) {
+      if (document.getElementById("signupEmail").value === '') { arg = arg + "- Email can not be empty<br>"; }
+      var email = document.getElementById('signupEmail');
+      var mailChar = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      if (!mailChar.test(email.value)) { arg = arg + "- Enter the correct email address(ex. user@email.com)<br>"; }
+      return arg;
+    }
 
-           function validateConditions(arg){
-        						       if(document.getElementById("customCheckRegister").checked==false){arg=arg+"- Please accept the terms and condition box<br>";}
-        						   return arg;
-          						 }
+    function validateConditions(arg) {
+      if (document.getElementById("customCheckRegister").checked == false) { arg = arg + "- Please accept the terms and condition box<br>"; }
+      return arg;
+    }
 
-           function validateOrganizationName(arg){
-        	   								 if(document.getElementById("signupOrgName").value===''){arg=arg+"- Organization can not be empty<br>";}
-        	  								 return arg;
-	          						 }
+    function validateOrganizationName(arg) {
+      if (document.getElementById("signupOrgName").value === '') { arg = arg + "- Organization can not be empty<br>"; }
+      return arg;
+    }
 
-            function validatePhone(arg){
-        	  						 if(document.getElementById("phone").value===''){arg=arg+"- Phone can not be empty<br>";}
-        	  						 return arg;
-	          						 }
-
-</script>
+    function validatePhone(arg) {
+      if (document.getElementById("phone").value === '') { arg = arg + "- Phone can not be empty<br>"; }
+      if (phone.value.length != 11 && phone.value.length != 10) { arg = arg + "- Phone must be at most 11 characters (ex. 05551231234 or 5551231234)<br>"; }
+      return arg;
+    }
+  </script>
   <script>
-   var logon=function() {
+    var logon = function () {
 
-	   const url='http://localhost:8080/UmaiWebApp/activate';
-	   var activationCode=document.getElementById("activationCodeTxt").value;
-	   alert(activationCode);
-	   var xmlHttp = new XMLHttpRequest();
-	   xmlHttp.open( "PUT", url, false ); // false for synchronous request
-	   xmlHttp.setRequestHeader("activation-code", activationCode);
-	   xmlHttp.send();
-	   var resp=xmlHttp.responseText;
-	   if(resp==='false'){
-		                  alert("That wasn't the correct code");
-                        }
-	   if(resp==='true'){
-	                                    window.open('http://localhost:8080/UmaiWebApp/dashboard','_self');
-	                    }
+      const url = 'http://localhost:8080/UmaiWebApp/activate';
+      var activationCode = document.getElementById("activationCodeTxt").value;
+      alert(activationCode);
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("PUT", url, false); // false for synchronous request
+      xmlHttp.setRequestHeader("activation-code", activationCode);
+      xmlHttp.send();
+      var resp = xmlHttp.responseText;
+      if (resp === 'false') {
+        alert("That wasn't the correct code");
+      }
+      if (resp === 'true') {
+        window.open('http://localhost:8080/UmaiWebApp/dashboard', '_self');
+      }
 
-	  /*  $.get('http://localhost:8080/UmaiWebApp/register2', function(responseText) {
-		    alert(responseText);
-		}); */
+      /*  $.get('http://localhost:8080/UmaiWebApp/register2', function(responseText) {
+          alert(responseText);
+      }); */
 
-	}
+    }
 
-   var createNewAccount=function(){ // Send a request to create a new venue
-	    var retVal=false;
-		var request={
-						"venue":"",
-						"person":"",
-						"email":"",
-						"phone":""
-					}
+    var createNewAccount = function () { // Send a request to create a new venue
+      var retVal = false;
+      var request = {
+        "venue": "",
+        "person": "",
+        "email": "",
+        "phone": ""
+      }
 
-		request.venue=document.getElementById("signupOrgName").value;
-		request.person=document.getElementById("signupFullName").value;
-		request.email=document.getElementById("signupEmail").value;
-		request.phone=document.getElementById("phone").value;
+      request.venue = document.getElementById("signupOrgName").value;
+      request.person = document.getElementById("signupFullName").value;
+      request.email = document.getElementById("signupEmail").value;
+      request.phone = document.getElementById("phone").value;
 
 
-			 $.ajax({
-	            type: "POST",
-	            url: "http://localhost:8080/UmaiWebApp/register",
-	            data: JSON.stringify(request),
-	            contentType: "application/json; charset=utf-8",
-	            dataType: "json",
-	            success: function(data){
-	            	retVal=true;
-					},
-	            failure: function(errMsg) {
-	                alert(errMsg);
-	            }
-	        });
+      $.ajax({
+        type: "POST",
+        url: "http://localhost:8080/UmaiWebApp/register",
+        data: JSON.stringify(request),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+          retVal = true;
+        },
+        failure: function (errMsg) {
+          alert(errMsg);
+        }
+      });
 
-}
+    }
   </script>
 </body>
 
